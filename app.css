@@ -1,0 +1,144 @@
+/* Main container for layout */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Spacing between the left and right sections */
+  margin: 20px auto;
+  max-width: 1200px; /* Restrict maximum width */
+}
+
+/* Document Section (Left) */
+.preview-container {
+  flex: 3; /* Occupy 75% of the space */
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Bookman Old Style', serif !important;
+  font-size: 13px !important;
+  line-height: 1.5;
+}
+
+/* Form Section (Right) */
+.form-container {
+  flex: 1; /* Occupy 25% of the space */
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 15px; /* Add spacing between inputs */
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Table Styling (For Document Section) */
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+
+.preview-table th,
+.preview-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.preview-table th {
+  font-weight: bold;
+  background: #f2f2f2;
+}
+
+.preview-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.preview-table tr:hover {
+  background: #f1f1f1;
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .form-container,
+  .preview-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.index-header {
+  text-align: center; /* Center the text horizontally */
+  font-weight: bold; /* Ensure it is bold */
+  font-size: 1.2rem; /* Adjust the size if needed */
+  letter-spacing: 0.2em; /* Add spacing between letters */
+  margin-top: 20px; /* Add space above */
+  margin-bottom: 20px; /* Add space below */
+  text-transform: uppercase; /* Ensure all letters are uppercase */
+}
+
+.versus {
+  text-align: center; /* Center the text horizontally */
+  margin: 20px 0; /* Add space above and below */
+  font-weight: normal; /* Ensure it is not bold */
+  font-size: 1rem; /* Adjust font size if needed */
+}
+
+/* Download Buttons Styling */
+.download-buttons button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.download-buttons button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.download-buttons button:hover::after {
+  width: 200px;
+  height: 200px;
+}
+
+.download-buttons button:active {
+  transform: scale(0.98);
+}
+

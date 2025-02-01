@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: row; /* Arrange left and right sections side by side */
+  gap: 20px; /* Add spacing between the sections */
+  margin: 20px auto; /* Center the layout horizontally */
+  max-width: 1200px; /* Restrict the maximum width of the container */
+}
+
+.form-container {
+  flex: 1; /* Assign less space to the form */
+  background-color: #f9f9f9; /* Add a subtle background to separate it visually */
+  padding: 15px; /* Add padding around the form for breathing space */
+  border: 1px solid #ddd; /* Optional: Add a light border for separation */
+  border-radius: 5px; /* Optional: Round the edges for aesthetics */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+}
+
+.preview-container {
+  flex: 3; /* Assign more space to the document content */
+  padding: 20px; /* Add padding for readability */
+  background: white; /* Ensure the background is plain white */
+  border: 1px solid #ddd; /* Add a border for structure */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.preview-container {
+  flex: 3;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.form-container {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .preview-container {
+    width: 100%;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.preview-container {
+  flex: 3;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Bookman Old Style', serif !important;
+  font-size: 13px !important;
+  line-height: 1.5;
+}
+
+.form-container {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .preview-container {
+    width: 100%;
+  }
+}

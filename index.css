@@ -1,0 +1,46 @@
+/* Container for the form */
+.edit-form-container {
+  max-width: 400px;
+  margin: auto; /* Centers the form on the page */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: 'Bookman Old Style', serif !important;
+  font-size: 13px !important;;
+}
+
+/* Style for labels */
+.edit-form-container label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.edit-form-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Button styling */
+.edit-form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-form-container button:hover {
+  background-color: #0056b3;
+}
+ 
