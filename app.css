@@ -5,6 +5,59 @@
   gap: 20px; /* Spacing between the left and right sections */
   margin: 20px auto;
   max-width: 1200px; /* Restrict maximum width */
+  position: relative; /* Needed for absolute positioning of buttons */
+}
+
+/* Buttons Container - Positioned on the Right */
+.buttons-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Preview Button */
+.preview-toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.preview-toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Download Buttons */
+.download-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+/* Header Styling */
+.header {
+  text-align: center; /* Centers the text horizontally */
+  font-weight: bold;
+  font-size: 0.75rem; /* Adjust font size if needed */
+  margin-top: 20px; /* Add space above */
+  margin-bottom: 20px; /* Add space below */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 0.1em; /* Add spacing between letters for better aesthetics */
 }
 
 /* Document Section (Left) */
@@ -84,6 +137,11 @@ input[type="text"]:focus {
   background: #f1f1f1;
 }
 
+/* Hide form when in preview mode */
+.preview-only .form-container {
+  display: none;
+}
+
 /* Responsive Layout for Small Screens */
 @media (max-width: 768px) {
   .container {
@@ -141,4 +199,3 @@ input[type="text"]:focus {
 .download-buttons button:active {
   transform: scale(0.98);
 }
-
